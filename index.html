@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalsa Store | Premium Sikh Heritage Lifestyle</title>
+    <meta name="description" content="Discover premium Sikh Accessories designed for everyday elegance. Authentic craftsmanship meets modern minimalism.">
+    
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Complimentary worldwide shipping on all orders over $150</p>
+    </div>
+
+    <!-- Premium Navbar -->
+    <!-- 2. Premium Sticky Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            
+            <!-- Navbar Logo Fixed (Added class="logo-img" here) -->
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="Khalsa Logo" class="logo-img">
+                <span class="logo-text">Khalsa Store</span>
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+            
+            <!-- Navigation Links with Mega Dropdowns -->
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                
+                <!-- SIKHI ITEMS -->
+                <div class="nav-item dropdown">
+                    <a href="#shop" class="nav-link">Sikhi Items <i data-lucide="chevron-down" class="dropdown-icon"></i></a>
+                    <div class="dropdown-menu mega-menu">
+                        <ul class="dropdown-grid">
+                            <li><a href="#">Kirpan</a></li>
+                            <li><a href="#">Kara</a></li>
+                            <li><a href="#">Kara - Kids</a></li>
+                            <li><a href="#">Kara Customized - Name</a></li>
+                            <li><a href="#">Kanga</a></li>
+                            <li><a href="#">Kachera</a></li>
+                            <li><a href="#">Sarbloh Bartan</a></li>
+                            <li><a href="#">Gatka Items</a></li>
+                            <li><a href="#">Gatra</a></li>
+                            <li><a href="#">Simrana</a></li>
+                            <li><a href="#">Kamarkasa/Khajana</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- GURUDWARA ITEMS -->
+                <div class="nav-item dropdown">
+                    <a href="#gurudwara" class="nav-link">Gurudwara Items <i data-lucide="chevron-down" class="dropdown-icon"></i></a>
+                    <div class="dropdown-menu mega-menu">
+                        <ul class="dropdown-grid">
+                            <li><a href="#">Rumala Sahib</a></li>
+                            <li><a href="#">Chandoa Sahib</a></li>
+                            <li><a href="#">Chattar Sahib</a></li>
+                            <li><a href="#">Chaur Sahib</a></li>
+                            <li><a href="#">Guru Ghar</a></li>
+                            <li><a href="#">Musical Instruments</a></li>
+                            <li><a href="#">Covers/ Stands</a></li>
+                            <li><a href="#">Chola Nishan Sahib</a></li>
+                            <li><a href="#">Other items</a></li>
+                            <li><a href="#">Siropa</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TURBAN -->
+                <div class="nav-item dropdown">
+                    <a href="#turban" class="nav-link">Turban <i data-lucide="chevron-down" class="dropdown-icon"></i></a>
+                    <div class="dropdown-menu mega-menu">
+                        <ul class="dropdown-grid">
+                            <li><a href="#">TURBAN</a></li>
+                            <li><a href="#">Patkas</a></li>
+                            <li><a href="#">Dumala - Tiptop / Malmal</a></li>
+                            <li><a href="#">Dumala - Voile</a></li>
+                            <li><a href="#">Dumala Accessories</a></li>
+                            <li><a href="#">PARNAS</a></li>
+                            <li><a href="#">Fifty</a></li>
+                            <li><a href="#">Thathi</a></li>
+                            <li><a href="#">Baj / Salai</a></li>
+                            <li><a href="#">Jura Rumal</a></li>
+                            <li><a href="#">Turban Pins</a></li>
+                            <li><a href="#">DESIGNER TURBAN</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- GATKA ITEMS -->
+                <div class="nav-item dropdown">
+                    <a href="#gatka" class="nav-link">Gatka Items <i data-lucide="chevron-down" class="dropdown-icon"></i></a>
+                    <div class="dropdown-menu mega-menu">
+                        <ul class="dropdown-grid">
+                            <li><a href="#">Chakar</a></li>
+                            <li><a href="#">Dhaal</a></li>
+                            <li><a href="#">Gatka Chest Guard</a></li>
+                            <li><a href="#">Gatka Helmet</a></li>
+                            <li><a href="#">Kurta Sanjo</a></li>
+                            <li><a href="#">Gurj / Kandayali Gola</a></li>
+                            <li><a href="#">Neja & Barsha</a></li>
+                            <li><a href="#">Loha Nagni & Ktaar</a></li>
+                            <li><a href="#">Farhi & Gatka Stick</a></li>
+                            <li><a href="#">Razi Gola & Kaala</a></li>
+                            <li><a href="#">Narsingha</a></li>
+                            <li><a href="#">Belts & Dori</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-icons">
+                <button aria-label="Search"><i data-lucide="search"></i></button>
+                <button aria-label="Wishlist"><i data-lucide="heart"></i></button>
+                <button aria-label="Cart"><i data-lucide="shopping-bag"></i></button>
+                <button aria-label="Account"><i data-lucide="user"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero container section fade-in">
+            <div class="hero-content">
+                <span class="badge">The Heritage Collection</span>
+                <h1 class="heading-large">Premium Sikh Accessories<br><i>Designed for Everyday Elegance.</i></h1>
+                <p class="body-text">Discover a curated lifestyle collection blending profound heritage with refined, modern minimalism. Authentic craftsmanship for the contemporary individual.</p>
+                <div class="button-group">
+                    <a href="#categories" class="btn btn-primary">Shop Collection</a>
+                    <a href="#story" class="btn btn-secondary">Our Heritage</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="sikh.png" alt="Premium Sikh Accessories on Cream Marble" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Curated Categories (Full 24 Items) -->
+        <section id="categories" class="categories section bg-section fade-in">
+            <div class="container">
+                <h2 class="heading-medium text-center mb-large">Curated Categories</h2>
+                <div class="category-grid">
+                    <!-- 1-8 -->
+                    <div class="cat-card">
+                        <img src="turban image.png" alt="Turban" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Turban</h3>
+                            <p class="body-text-small">Premium fabrics & dastar sets.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="sikhiitems.png" alt="Sikhi Items" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Sikhi Items</h3>
+                            <p class="body-text-small">Everyday articles of faith.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="gurudwaraitems.png" alt="Gurudwara Items" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Gurudwara Items</h3>
+                            <p class="body-text-small">Sacred space accessories.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="gatka.png" alt="Gatka Items" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Gatka Items</h3>
+                            <p class="body-text-small">Traditional martial arts gear.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- 5-8 -->
+                    <div class="cat-card">
+                        <img src="kirpan.png" alt="Kirpan" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Kirpan</h3>
+                            <p class="body-text-small">Ceremonial excellence.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="kara.png" alt="Kara" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Kara</h3>
+                            <p class="body-text-small">Symbol of eternity.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZBgAaziSxXegiICquDO5xe_QoN9pSG281-MUeGaBlg&s=10" alt="Khanda" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Khanda</h3>
+                            <p class="body-text-small">Pendants and emblems.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6OWHTNjzlGAQwQK7M2S6qyQmH3UfR8tFXAhcnKCoCyw&s=10" alt="Kangha" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Kangha</h3>
+                            <p class="body-text-small">Handcrafted wooden combs.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- 9-12 -->
+                    <div class="cat-card">
+                        <img src="kachera.png" alt="Kachera" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Kachera</h3>
+                            <p class="body-text-small">Premium cotton wear.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSCv8FaNuEajUK6hbdMfkpp1qm7XvEUxmsMZR4262s_Q&s=10" alt="Gatra" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Gatra</h3>
+                            <p class="body-text-small">Elegant kirpan straps.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrBpS5fGOvoF9FwH0bCuILQFsChO-yOG976IwVoi-xXw&s=10" alt="Simrana" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Simrana</h3>
+                            <p class="body-text-small">For focused meditation.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYIeHhQoAo-_NDxS7baSkHLr_cSsk936QkiQGkTQcuJw&s=10" alt="Mala" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Mala</h3>
+                            <p class="body-text-small">Hand-knotted rosaries.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- 13-16 -->
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMlddyPw5l73nhxp3A4FkXrJQomR5KN3YU5OzaLRQ34g&s=10" alt="Rumala Sahib" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Rumala Sahib</h3>
+                            <p class="body-text-small">Exquisite embroidered fabrics.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSng9DggXic_xkyZ1PxGio0DELBp5G9xnTFgrXTtYqMtg&s=10" alt="Chaur Sahib" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Chaur Sahib</h3>
+                            <p class="body-text-small">Silver and synthetic hair.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcZ8CKs5tqFc66HfbIcxClxkSd0slV8orHaaWj_5srQ&s=10" alt="Nishan Sahib" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Nishan Sahib</h3>
+                            <p class="body-text-small">Flags and accessories.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://i0.wp.com/www.sikhlink.net/wp-content/uploads/2021/02/BlueGutkeyBox_0213.jpg?fit=500%2C438&ssl=1" alt="Gutka Sahib" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Gutka Sahib</h3>
+                            <p class="body-text-small">Elegant covers and stands.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- 17-20 -->
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQiu0nur-SfI7KfO5ENZ18euVSMC_MNA1TpI6b5UIVQ&s=10" alt="Palki Accessories" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Palki Accessories</h3>
+                            <p class="body-text-small">Sacred installation items.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://sikhworld.in/cdn/shop/files/F74Mulmulorange_c48247b7-94dc-4197-916f-35936d6ec563.png?v=1773831911" alt="Dumalla" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Dumalla</h3>
+                            <p class="body-text-small">Traditional long turbans.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREWT7wtjDHvK85mGzoiqgU86OKXuGbkTGrvgF6NzHIHg&s=10" alt="Patka" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Patka</h3>
+                            <p class="body-text-small">Soft fabrics for all ages.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSypVRyEZS3GGcnxVoMdnxSnDhrwxz6b4AOabOkgYDqUA&s" alt="Turban Accessories" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Turban Accessories</h3>
+                            <p class="body-text-small">Pins, Salai, and Fifties.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- 21-24 -->
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqH7nbgVYvVbNS62nxqYaJ7uyIuOwUDjfCR2DJ2H8faQ&s=10" alt="Gatka Weapons" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Gatka Weapons</h3>
+                            <p class="body-text-small">Swords, shields, chakrams.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Q7kT2Xcf0TrTkHFLXN0QIjx-ZpTx5hQHnsjZ9CxazQ&s=10" alt="Training Equipment" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Training Equipment</h3>
+                            <p class="body-text-small">Soti, Farri, and safety gear.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs41sc1Yqa_BbrxUScf6f27lAYkcvBn87nvA2wtiuRFg&s=10" alt="Sarbloh Bartan" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Sarbloh Bartan</h3>
+                            <p class="body-text-small">Iron utensils for Langar.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3uMXD0iZWi2Xi1SgXLzNP5Z_0RBMIadbqcQsIjfJtQ&s=10" alt="Religious Decor" loading="lazy">
+                        <div class="cat-content">
+                            <h3 class="heading-small">Religious Decor</h3>
+                            <p class="body-text-small">Art, frames, and aesthetics.</p>
+                            <a href="#" class="view-btn">View Collection <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Brand Story -->
+        <section id="story" class="brand-story section bg-section fade-in">
+            <div class="container story-layout">
+                <div class="story-image">
+                    <img src="talwar.png" alt="Sikh Artisan crafting accessories" loading="lazy">
+                </div>
+                <div class="story-content">
+                    <span class="subtitle mb-small">Our Legacy</span>
+                    <h2 class="heading-medium mb-medium">The Art of Devotion</h2>
+                    <p class="body-text mb-small">We believe that articles of faith should be crafted with the same profound devotion they represent. Our pieces are meticulously designed in our studio, utilizing premium, ethically sourced materials.</p>
+                    <p class="body-text mb-medium">By marrying centuries-old traditional craftsmanship with modern, understated aesthetics, we create luxurious heirlooms that seamlessly integrate into your daily life.</p>
+                    <a href="#" class="btn btn-secondary">Read Our Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="features section container fade-in">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-circle"><i data-lucide="hammer"></i></div>
+                    <h4 class="heading-small">Premium Craftsmanship</h4>
+                    <p class="body-text-small">Meticulously forged by master artisans.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle"><i data-lucide="landmark"></i></div>
+                    <h4 class="heading-small">Authentic Sikh Heritage</h4>
+                    <p class="body-text-small">Rooted deeply in rich traditions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle"><i data-lucide="shield-check"></i></div>
+                    <h4 class="heading-small">Secure Payments</h4>
+                    <p class="body-text-small">Encrypted, safe, and private transactions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle"><i data-lucide="globe"></i></div>
+                    <h4 class="heading-small">Worldwide Shipping</h4>
+                    <p class="body-text-small">Complimentary expedited global delivery.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle"><i data-lucide="box"></i></div>
+                    <h4 class="heading-small">Premium Packaging</h4>
+                    <p class="body-text-small">Elegantly boxed, perfect for gifting.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle"><i data-lucide="award"></i></div>
+                    <h4 class="heading-small">Lifetime Finish</h4>
+                    <p class="body-text-small">Quality materials guaranteed to endure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Heritage Banner -->
+        <section class="promotional-banner fade-in">
+            <div class="banner-image" style="background-image: url('landescape.png');"></div>
+            <div class="banner-overlay"></div>
+            <div class="banner-content text-center">
+                <h2 class="heading-large text-white mb-small">The Heritage Collection</h2>
+                <p class="body-text text-white mb-medium" style="color: #F3F4F6;">A limited release honoring timeless traditions through exquisite, contemporary design.</p>
+                <a href="#shop" class="btn btn-primary bg-white">Discover the Collection</a>
+            </div>
+        </section>
+
+        <!-- Customer Reviews -->
+        <section class="reviews section bg-section fade-in">
+            <div class="container">
+                <h2 class="heading-medium text-center mb-large">Words From Our Community</h2>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Customer Avatar" loading="lazy">
+                            </div>
+                            <div class="reviewer-info">
+                                <h4 class="heading-small">Amrit S. <i data-lucide="badge-check" class="verified-icon"></i></h4>
+                                <span class="review-meta">Oct 12, 2025 <span class="flag">🇨🇦</span></span>
+                            </div>
+                        </div>
+                        <div class="rating mb-small"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                        <p class="body-text">"The quality of the brushed steel Kara is unmatched. It feels incredibly premium and pairs perfectly with both my casual and formal wear. The packaging was also stunning."</p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Customer Avatar" loading="lazy">
+                            </div>
+                            <div class="reviewer-info">
+                                <h4 class="heading-small">Kiran K. <i data-lucide="badge-check" class="verified-icon"></i></h4>
+                                <span class="review-meta">Nov 04, 2025 <span class="flag">🇬🇧</span></span>
+                            </div>
+                        </div>
+                        <div class="rating mb-small"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                        <p class="body-text">"Beautiful presentation, swift delivery, and an absolutely stunning pendant. You can genuinely feel the meticulous craftsmanship and care poured into every detail."</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" alt="Customer Avatar" loading="lazy">
+                            </div>
+                            <div class="reviewer-info">
+                                <h4 class="heading-small">Harman R. <i data-lucide="badge-check" class="verified-icon"></i></h4>
+                                <span class="review-meta">Dec 20, 2025 <span class="flag">🇺🇸</span></span>
+                            </div>
+                        </div>
+                        <div class="rating mb-small"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                        <p class="body-text">"Finally, a lifestyle brand that respects our heritage while offering a clean, modern aesthetic. The Dumalla fabric is the softest I've ever felt. I will absolutely be purchasing again."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Gallery -->
+        <section class="instagram section container fade-in">
+            <h2 class="heading-medium text-center mb-large">@KhalsaStore</h2>
+            <div class="insta-grid">
+                <div class="insta-item">
+                    <img src="kara.png" alt="Premium Sikh Kara" loading="lazy">
+                    <div class="insta-overlay"><i data-lucide="instagram"></i></div>
+                </div>
+                <div class="insta-item">
+                    <img src="talwar.png" alt="Premium Sikh Talwar" loading="lazy">
+                    <div class="insta-overlay"><i data-lucide="instagram"></i></div>
+                </div>
+                <div class="insta-item">
+                    <img src="kirpan.png" alt="Navy Blue Turban fabric" loading="lazy">
+                    <div class="insta-overlay"><i data-lucide="instagram"></i></div>
+                </div>
+                <div class="insta-item">
+                    <img src="sikh.png" alt="Wooden Kangha styling" loading="lazy">
+                    <div class="insta-overlay"><i data-lucide="instagram"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter section fade-in">
+            <div class="container text-center newsletter-wrapper">
+                <h2 class="heading-medium mb-small">Join the Khalsa Community</h2>
+                <p class="body-text mb-medium text-muted">Subscribe to receive gentle updates on new collections, exclusive access, and heritage editorial pieces.</p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <i data-lucide="mail" class="input-icon"></i>
+                        <input type="email" placeholder="Enter your email address" required aria-label="Email Address">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer id="contact" class="footer bg-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo mb-small" style="display: inline-flex;">
+                        <img src="logo.jpg" alt="Khalsa Logo" class="logo-img">
+                        <span class="logo-text">Khalsa Store</span>
+                    </a>
+                    <p class="body-text-small text-muted mb-medium">Everyday elegance rooted in profound heritage.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i data-lucide="image"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="heading-small mb-small">Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sikhi Items</a></li>
+                         <li><a href="#">Gatka Items</a></li>
+                         <li><a href="#">Gurudwara Items</a></li>
+                        <li><a href="#">Turban Collection</a></li>
+                     
+                        
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="heading-small mb-small">Customer Support</h4>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links contact-info">
+                    <h4 class="heading-small mb-small">Contact Information</h4>
+                    <ul>
+                        <li><a href="https://wa.me/1234567890"><i data-lucide="message-circle"></i> +1 (234) 567-8900 (WhatsApp)</a></li>
+                        <li><a href="tel:+1234567890"><i data-lucide="phone"></i> +1 (234) 567-8900</a></li>
+                        <li><a href="mailto:support@khalsastore.com"><i data-lucide="mail"></i> support@khalsastore.com</a></li>
+                        <li><i data-lucide="map-pin"></i> 123 Heritage Lane, Luxury District, NY 10001</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="body-text-small text-muted">&copy; 2026 Khalsa Store. All rights reserved.</p>
+                <div class="payment-icons">
+                    <i data-lucide="credit-card"></i>
+                    <i data-lucide="smartphone"></i>
+                    <i data-lucide="shield-check"></i>
+                    <i data-lucide="nfc"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
