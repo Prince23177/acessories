@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Initialize Lucide Icons[cite: 1]
+    // 1. Initialize Lucide Icons
     lucide.createIcons();
 
-    // 2. Premium Sticky Navbar Effect[cite: 1]
+    // 2. Premium Sticky Navbar Effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
@@ -13,31 +13,45 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Mobile Menu & Accordion Logic[cite: 1]
+    // 3. Mobile Menu & Accordion Logic
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const navLinks = document.getElementById('nav-links');
     
+    const closeMobileMenu = () => {
+        navLinks.classList.remove('active');
+        if(mobileBtn) mobileBtn.querySelector('i').setAttribute('data-lucide', 'menu');
+        document.body.style.overflow = ''; // Restore Body Scroll
+        
+        // Reset dropdowns
+        document.querySelectorAll('.dropdown-menu').forEach(m => m.classList.remove('active'));
+        document.querySelectorAll('.dropdown-icon').forEach(i => i.style.transform = '');
+        lucide.createIcons();
+    };
+
     if (mobileBtn && navLinks) {
-        mobileBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+        mobileBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isActive = navLinks.classList.toggle('active');
             
             // Toggle icon between menu and x
             const icon = mobileBtn.querySelector('i');
-            if (navLinks.classList.contains('active')) {
+            if (isActive) {
                 icon.setAttribute('data-lucide', 'x');
+                document.body.style.overflow = 'hidden'; // Prevent Body Scroll
             } else {
                 icon.setAttribute('data-lucide', 'menu');
+                document.body.style.overflow = ''; // Restore Body Scroll
             }
             lucide.createIcons();
         });
     }
 
-    // Accordion functionality for mobile dropdowns[cite: 1]
+    // Accordion functionality for mobile dropdowns
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
     dropdownToggles.forEach(toggle => {
         toggle.addEventListener('click', (e) => {
             if (window.innerWidth <= 768) {
-                e.preventDefault(); // Prevent jump to #
+                e.preventDefault(); 
                 const parent = toggle.parentElement;
                 const menu = parent.querySelector('.dropdown-menu');
                 const icon = toggle.querySelector('.dropdown-icon');
@@ -61,22 +75,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Close mobile menu on resize[cite: 1]
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
-            navLinks.classList.remove('active');
-            if(mobileBtn) mobileBtn.querySelector('i').setAttribute('data-lucide', 'menu');
-            document.querySelectorAll('.dropdown-menu').forEach(m => m.classList.remove('active'));
-            document.querySelectorAll('.dropdown-icon').forEach(i => i.style.transform = '');
-            lucide.createIcons();
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navLinks && navLinks.classList.contains('active') && !navLinks.contains(e.target) && !mobileBtn.contains(e.target)) {
+            closeMobileMenu();
         }
     });
 
-    // 4. Smooth Fade-In Animations on Scroll (Intersection Observer)[cite: 1]
+    // Close menu after clicking a normal navigation link
+    document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                closeMobileMenu();
+            }
+        });
+    });
+
+    // Close mobile menu on resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && navLinks && navLinks.classList.contains('active')) {
+            closeMobileMenu();
+        }
+    });
+
+    // 4. Smooth Fade-In Animations on Scroll (Intersection Observer)
     const fadeElements = document.querySelectorAll('.fade-in');
     const observerOptions = {
         root: null,
-        threshold: 0.1, // Trigger earlier for smoother experience[cite: 1]
+        threshold: 0.1, 
         rootMargin: "0px 0px -50px 0px"
     };
 
@@ -93,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fadeObserver.observe(element);
     });
 
-    // 5. Newsletter Form Submission Handling[cite: 1]
+    // 5. Newsletter Form Submission Handling
     const newsletterForm = document.querySelector('.newsletter-form');
     if (newsletterForm) {
         newsletterForm.addEventListener('submit', (e) => {
@@ -118,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 6. Quick Add To Cart Interaction[cite: 1]
+    // 6. Quick Add To Cart Interaction
     const addBtns = document.querySelectorAll('.add-to-cart');
     addBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -135,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // 7. Wishlist Interaction[cite: 1]
+    // 7. Wishlist Interaction
     const wishlistBtns = document.querySelectorAll('.card-actions .action-btn:first-child');
     wishlistBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
