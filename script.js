@@ -98,12 +98,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 4. Smooth Fade-In Animations on Scroll (Intersection Observer)
+    // 4. Smooth Fade-In Animations on Scroll (Intersection Observer FIX)
     const fadeElements = document.querySelectorAll('.fade-in');
+    
+    // CRITICAL BUG FIX: Threshold changed to 0. 
+    // Previously, `threshold: 0.1` prevented tall elements (like a 24-item grid stacked on mobile)
+    // from triggering because 10% of a massive element was larger than the device viewport.
     const observerOptions = {
         root: null,
-        threshold: 0.1, 
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0, 
+        rootMargin: "0px 0px -50px 0px" 
     };
 
     const fadeObserver = new IntersectionObserver((entries, observer) => {
